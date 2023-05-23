@@ -1,6 +1,6 @@
 -- script 20
 -- script that displays the top 3 of cities temperature on Juyly to August
-SELECT CITTY, AVG(value) AS avg_temp FROM temperatures
+SELECT CITY, AVG(value) AS avg_temp FROM temperatures
 WHERE month = 7 OR month = 8
 GROUP BY city
 ORDER BY avg_temp DESC
